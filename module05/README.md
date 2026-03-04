@@ -31,7 +31,7 @@ This module is divided into 4 progressive exercises:
 
 Each exercise has its own directory and `Makefile`.
 
-```bash
+bash
 cd ex00  # or ex01, ex02, ex03
 make
 ./[Executable_Name]

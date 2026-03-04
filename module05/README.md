@@ -45,41 +45,6 @@ Welcome to the 42 Bureaucracy! This module is a deep dive into C++ Exceptions (`
 Through a series of exercises, we build a fully functional (and highly bureaucratic) system where Bureaucrats sign forms, execute them, and delegate the tedious paperwork to Interns.
 
 
-
-## 📝 Project Overview
-
-This module is divided into 4 progressive exercises:
-
-### Ex00: Mommy, when I grow up, I want to be a bureaucrat!
-* **Core Concept:** Exceptions and `try-catch` blocks.
-* **Details:** Introduction of the `Bureaucrat` class. They have a `const` name and a grade ranging from 1 (highest) to 150 (lowest). Any attempt to create or modify a bureaucrat outside this range throws a custom exception (`GradeTooHighException` or `GradeTooLowException`).
-
-### Ex01: Form up, maggots!
-* **Core Concept:** Class interaction and cross-class exceptions.
-* **Details:** Introduction of the `Form` class. Forms require specific grades to be signed and executed. Bureaucrats can now interact with forms via the `signForm()` method, which elegantly handles exceptions if the bureaucrat's grade is too low.
-
-### Ex02: No, you need form 28B, not 28C...
-* **Core Concept:** Abstract Classes, Inheritance, and Polymorphism.
-* **Details:** The base `Form` becomes an Abstract Class (`AForm`) with a pure virtual `execute()` method. Three concrete forms are derived:
-  * 🌳 `ShrubberyCreationForm`: Creates a file `<target>_shrubbery` containing an ASCII tree.
-  * 🤖 `RobotomyRequestForm`: Makes drilling noises and has a 50% chance of successfully robotomizing the target (powered by `<cstdlib>` RNG).
-  * 🎩 `PresidentialPardonForm`: Announces that the target has been pardoned.
-
-### Ex03: At least this beats coffee-making
-* **Core Concept:** Factory Pattern (without using `if/else` forests).
-* **Details:** Introduction of the nameless, gradeless `Intern`. The intern generates forms dynamically using an array of function pointers. This provides a clean, scalable, and memory-safe way to map string names to object instantiation.
-
----
-
-## 🚀 How to Compile and Run
-
-Each exercise has its own directory and `Makefile`.
-
-```bash
-cd ex00  # or ex01, ex02, ex03
-make
-./[Executable_Name]
-
 中文版
 
 # 🏢 CPP Module 05 - 官僚主义的噩梦 (The Bureaucracy Nightmare)
@@ -87,7 +52,6 @@ make
 欢迎来到 42 的官僚系统！本模块深入探讨了 C++ 的异常处理 (`try-catch`)、抽象类、继承、多态以及工厂模式。
 
 通过一系列循序渐进的练习，我们构建了一个功能完备（且极度官僚）的系统：高高在上的官僚们负责签字、执行表单，并把繁琐的“造表单”工作甩锅给底层的实习生。
-
 
 
 ## 📝 项目概览

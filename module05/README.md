@@ -45,7 +45,7 @@ Welcome to the 42 Bureaucracy! This module is a deep dive into C++ Exceptions (`
 Through a series of exercises, we build a fully functional (and highly bureaucratic) system where Bureaucrats sign forms, execute them, and delegate the tedious paperwork to Interns.
 
 
-中文版
+##中文版
 
 # 🏢 CPP Module 05 - 官僚主义的噩梦 (The Bureaucracy Nightmare)
 

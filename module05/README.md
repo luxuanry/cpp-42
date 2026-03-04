@@ -4,47 +4,6 @@ Welcome to the 42 Bureaucracy! This module is a deep dive into C++ Exceptions (`
 
 Through a series of exercises, we build a fully functional (and highly bureaucratic) system where Bureaucrats sign forms, execute them, and delegate the tedious paperwork to Interns.
 
-
-
-## 📝 Project Overview
-
-This module is divided into 4 progressive exercises:
-
-### Ex00: Mommy, when I grow up, I want to be a bureaucrat!
-* **Core Concept:** Exceptions and `try-catch` blocks.
-* **Details:** Introduction of the `Bureaucrat` class. They have a `const` name and a grade ranging from 1 (highest) to 150 (lowest). Any attempt to create or modify a bureaucrat outside this range throws a custom exception (`GradeTooHighException` or `GradeTooLowException`).
-
-### Ex01: Form up, maggots!
-* **Core Concept:** Class interaction and cross-class exceptions.
-* **Details:** Introduction of the `Form` class. Forms require specific grades to be signed and executed. Bureaucrats can now interact with forms via the `signForm()` method, which elegantly handles exceptions if the bureaucrat's grade is too low.
-
-### Ex02: No, you need form 28B, not 28C...
-* **Core Concept:** Abstract Classes, Inheritance, and Polymorphism.
-* **Details:** The base `Form` becomes an Abstract Class (`AForm`) with a pure virtual `execute()` method. Three concrete forms are derived:
-  * 🌳 `ShrubberyCreationForm`: Creates a file `<target>_shrubbery` containing an ASCII tree.
-  * 🤖 `RobotomyRequestForm`: Makes drilling noises and has a 50% chance of successfully robotomizing the target (powered by `<cstdlib>` RNG).
-  * 🎩 `PresidentialPardonForm`: Announces that the target has been pardoned.
-
-### Ex03: At least this beats coffee-making
-* **Core Concept:** Factory Pattern (without using `if/else` forests).
-* **Details:** Introduction of the nameless, gradeless `Intern`. The intern generates forms dynamically using an array of function pointers. This provides a clean, scalable, and memory-safe way to map string names to object instantiation.
-he Bureaucracy Nightmare
----
-
-## 🚀 How to Compile and Run
-
-Each exercise has its own directory and `Makefile`.
-
-```bash
-cd ex00  # or ex01, ex02, ex03
-make
-./[Executable_Name]# 🏢 CPP Module 05 - The Bureaucracy Nightmare
-
-Welcome to the 42 Bureaucracy! This module is a deep dive into C++ Exceptions (`try-catch`), Abstract Classes, Inheritance, Polymorphism, and the Factory Pattern. 
-
-Through a series of exercises, we build a fully functional (and highly bureaucratic) system where Bureaucrats sign forms, execute them, and delegate the tedious paperwork to Interns.
-
-
 ##中文版
 
 # 🏢 CPP Module 05 - 官僚主义的噩梦 (The Bureaucracy Nightmare)
@@ -87,3 +46,44 @@ Through a series of exercises, we build a fully functional (and highly bureaucra
 cd ex00  # 或者 ex01, ex02, ex03
 make
 ./[可执行文件名]
+
+
+## 📝 Project Overview
+
+This module is divided into 4 progressive exercises:
+
+### Ex00: Mommy, when I grow up, I want to be a bureaucrat!
+* **Core Concept:** Exceptions and `try-catch` blocks.
+* **Details:** Introduction of the `Bureaucrat` class. They have a `const` name and a grade ranging from 1 (highest) to 150 (lowest). Any attempt to create or modify a bureaucrat outside this range throws a custom exception (`GradeTooHighException` or `GradeTooLowException`).
+
+### Ex01: Form up, maggots!
+* **Core Concept:** Class interaction and cross-class exceptions.
+* **Details:** Introduction of the `Form` class. Forms require specific grades to be signed and executed. Bureaucrats can now interact with forms via the `signForm()` method, which elegantly handles exceptions if the bureaucrat's grade is too low.
+
+### Ex02: No, you need form 28B, not 28C...
+* **Core Concept:** Abstract Classes, Inheritance, and Polymorphism.
+* **Details:** The base `Form` becomes an Abstract Class (`AForm`) with a pure virtual `execute()` method. Three concrete forms are derived:
+  * 🌳 `ShrubberyCreationForm`: Creates a file `<target>_shrubbery` containing an ASCII tree.
+  * 🤖 `RobotomyRequestForm`: Makes drilling noises and has a 50% chance of successfully robotomizing the target (powered by `<cstdlib>` RNG).
+  * 🎩 `PresidentialPardonForm`: Announces that the target has been pardoned.
+
+### Ex03: At least this beats coffee-making
+* **Core Concept:** Factory Pattern (without using `if/else` forests).
+* **Details:** Introduction of the nameless, gradeless `Intern`. The intern generates forms dynamically using an array of function pointers. This provides a clean, scalable, and memory-safe way to map string names to object instantiation.
+he Bureaucracy Nightmare
+---
+
+## 🚀 How to Compile and Run
+
+Each exercise has its own directory and `Makefile`.
+
+```bash
+cd ex00  # or ex01, ex02, ex03
+make
+./[Executable_Name]# 🏢 CPP Module 05 - The Bureaucracy Nightmare
+
+Welcome to the 42 Bureaucracy! This module is a deep dive into C++ Exceptions (`try-catch`), Abstract Classes, Inheritance, Polymorphism, and the Factory Pattern. 
+
+Through a series of exercises, we build a fully functional (and highly bureaucratic) system where Bureaucrats sign forms, execute them, and delegate the tedious paperwork to Interns.
+
+
